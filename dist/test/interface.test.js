@@ -51,5 +51,21 @@ describe('Interface', () => {
         };
         console.info(names.sayHello('Jennie'));
     });
+    it('should support intersection types typescript', () => {
+        const domain = {
+            id: '1',
+            name: 'Yudha',
+        };
+        console.info(domain);
+    });
+    it('should support type assertion typescript', () => {
+        const person = {
+            id: 1,
+            name: 'Yudha',
+            age: 20,
+        };
+        const person2 = person;
+        console.info(person2);
+    });
 });
 export {};
